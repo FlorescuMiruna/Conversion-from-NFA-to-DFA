@@ -1,0 +1,16 @@
+DFA-ul are 8 stari:
+[a], [a, b, c, d, e], [b, d, e], [c, e], [b], [c], [e], [d, e]
+Starile finale sunt:
+[a, b, c, d, e], [b, d, e], [c, e], [e], [d, e]
+Tranzitiile sunt:
+[a]    0    [a, b, c, d, e]
+[a]    1    [d, e]
+[a, b, c, d, e]    0    [a, b, c, d, e]
+[a, b, c, d, e]    1    [b, d, e]
+[b, d, e]    0    [c, e]
+[b, d, e]    1    [e]
+[c, e]    1    [b]
+[b]    0    [c]
+[b]    1    [e]
+[c]    1    [b]
+[d, e]    0    [e]
